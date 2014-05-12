@@ -2,10 +2,10 @@
     <select onchange="if (this.value) window.location.href=this.value">
         <option value="">Choose…</option>
         <optgroup label="Server">
-            {% include docs_option.html items='configure icons schemas' %}
+            {% include setup_option.html items='setup-server' %}
         </optgroup>
         <optgroup label="Client">
-            {% include docs_option.html items='tree projectmanager dfmanager' %}
+            {% include setup_option.html items='setup-carotdav setup-windowsexplorer' %}
         </optgroup>
     </select>
 </div>
