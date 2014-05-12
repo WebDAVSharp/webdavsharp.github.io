@@ -1,0 +1,11 @@
+<div class="docs-nav-mobile unit whole show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate the docs…</option>
+    <optgroup label="Getting the basics">
+    {% include docs_option.html items='configure icons schemas' %}
+	</optgroup>
+	<optgroup label="Advanced topics">
+    {% include docs_option.html items='tree projectmanager dfmanager' %}
+	</optgroup>
+  </select>
+</div>
