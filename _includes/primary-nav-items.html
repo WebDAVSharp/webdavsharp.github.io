@@ -2,4 +2,7 @@
     <li class="{% if page.home %}current{% endif %}">
         <a href="{{ site.url }}/">Home</a>
     </li>
+    <li class="{% if page.url contains '/setup/' ' %}current{% endif %}">
+        <a href="{{ site.url }}/setup/home">Setup</a>
+    </li>
 </ul>
