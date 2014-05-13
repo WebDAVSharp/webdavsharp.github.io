@@ -6,6 +6,8 @@ prev_section: /setup
 next_section: /setup/setup-carotdav
 ---
 
-How to configure your server
+On this page you can find the explanation how to configure your WebDAV# server.
+
+## Guide ##
 
 COMING SOON
