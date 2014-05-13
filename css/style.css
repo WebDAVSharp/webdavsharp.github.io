@@ -75,11 +75,22 @@ body > header, body > section, body > footer {
 #project_title {
     margin: 0;
     color: #000;
-    font-size: 42px;
     font-weight: 700;
     position: absolute;
     top: 45px;
-    left: 130px;
+    left: 115px;
+}
+
+@media (max-width: 320px) {
+    #project_title {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    #project_title {
+        font-size: 42px;
+    }
 }
 
 #project_title a {
