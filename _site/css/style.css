@@ -66,6 +66,7 @@ body > header, body > section, body > footer {
 
 #header_wrap {
     background: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
 }
 
 #header_wrap .inner {
@@ -1093,4 +1094,28 @@ code.option, code.flag, code.filter, code.output {
         margin: 0 -40px;
         padding: 0 10px;
     }
+}
+
+
+/* Home page */
+.intro2{
+    background: url(../img/home-background.png) repeat top center;
+    width: 100%;
+    height: 400px;
+}
+
+.intro2 div.drawing {
+    background-image: url("../img/home-intro.png") ;
+    display: block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.intro2 p{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 42px;
+    margin-top: 190px;
+    margin-left: 35%;
+    text-align: center;
 }
