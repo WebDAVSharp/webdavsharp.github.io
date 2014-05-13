@@ -5,7 +5,7 @@ permalink: /setup/setup-windowsexplorer/
 prev_section: /setup/setup-carotdav
 ---
 
-On this page you can find the explanation how to add the WebDAV server as network location, in 7 simple steps.
+On this page you can find the explanation of how to add the WebDAV server as network location, in 7 simple steps.
 That way, you can browse the WebDAV server with Windows Explorer.
 
 ## Guide ##

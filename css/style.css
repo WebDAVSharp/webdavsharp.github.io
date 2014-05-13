@@ -8,7 +8,7 @@
 
 body {
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 300;
     color: #000000;
     background: #F8F8F8;
@@ -463,7 +463,7 @@ article img {
 @media (min-width: 768px) {
     article {
         padding: 40px 40px 30px;
-        font-size: 21px;
+        font-size: 18px;
     }
 }
 
@@ -691,9 +691,11 @@ article h2:first-child {
 pre, code {
     width: 100%;
     color: #222;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: #F8F8F8;
 
-    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    font-family: "Lucida Console", Monaco, monospace;
+    /*font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;*/
     /*font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;*/
     /*font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif*/
     font-size: 14px;
@@ -706,8 +708,14 @@ pre, code {
 pre {
     width: 100%;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    /*box-shadow: 0 0 10px rgba(0,0,0,.1);*/
     overflow: auto;
+
+
+    border: 1px solid #ddd;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    box-shadow: none;
 }
 
 code {
@@ -735,15 +743,23 @@ pre, code {
 
 @media (min-width: 768px) {
     pre, code {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 1.2;
     }
 }
 
 .highlight, p > pre, p > code, li > code, h5 > code, .note > code {
-    background: #333;
+    /*background: #333;
     color: #fff;
     border-radius: 5px;
-    box-shadow: inset 0 1px 10px rgba(0, 0, 0, .3), 0 1px 0 rgba(255, 255, 255, .1), 0 -1px 0 rgba(0, 0, 0, .5);
+    box-shadow: inset 0 1px 10px rgba(0, 0, 0, .3), 0 1px 0 rgba(255, 255, 255, .1), 0 -1px 0 rgba(0, 0, 0, .5);*/
+
+    margin: 0;
+    border: 1px solid #ddd;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    padding: 2px 5px 1px 5px;
+    box-shadow: none;
 }
 
 .note code {
@@ -782,7 +798,7 @@ strong {
 }
 
 p {
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 
 .left {

@@ -128,11 +128,91 @@
         <div class="unit four-fifths">
             <article>
                 <h1>Setup Server</h1>
-                <p>On this page you can find the explanation how to configure your WebDAV server.</p>
+                <p>On this page you can find the explanation of how to configure your WebDAV server.</p>
 
 <h2 id="guide">Guide</h2>
 
-<p>COMING SOON</p>
+<h3 id="step-1">Step 1</h3>
+
+<p>Create a new application in Visual Studio, a console application for example.</p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Add references to the .dll file of the WebDAVSharp server.</p>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>To make the logger work, you first need to get the <a href="http://netcommon.sourceforge.net/">Common.Logging</a> NuGet package.
+You can simply download it from the NuGet Package Manager in Visual Studio.</p>
+
+<p>After that, you need to add the configuration for the logger.
+In the code below, you can find the configuration code for a console logger,
+but more Common.Logging configurations can be found <a href="http://netcommon.sourceforge.net/docs/2.1.0/reference/html/ch01.html#logging-configuring-in-code">here</a>.</p>
+
+<pre><code>using System.Collections.Specialized;
+using Common.Logging;
+
+// create properties
+NameValueCollection properties = new NameValueCollection();
+properties["showDateTime"] = "true";
+// set Adapter
+LogManager.Adapter =
+    new Simple.ConsoleOutLoggerFactoryAdapter(properties);
+</code></pre>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>The WebDAV server needs administrator rights, that is why you need to ask for them in your manifest file.
+Simply add the following code to the manifest, but place it as high as possible in the file.
+Otherwise, it might not work.</p>
+
+<pre><code>&lt;security&gt;
+    &lt;requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3"&gt;
+        &lt;requestedExecutionLevel
+            level="requireAdministrator"
+            uiAccess="true" /&gt;
+    &lt;/requestedPrivileges&gt;
+&lt;/security&gt;
+</code></pre>
+
+<h3 id="step-5">Step 5</h3>
+
+<p>When the configuration for the logger is implemented,
+and the request for administrator rights is added in the manifest file,
+then you can start the server.</p>
+
+<p>First you need to create a new instance of the WebDavServer and add some values to the instance.
+The following code shows how it needs to be done.
+You can replace “your_local_path” with, for example: <code>c:\</code>.
+And you can replace “http://your_url_here/” with, for example: <code>http://localhost/</code>.
+Of course, you can add a port number to the URL, for example: <code>http://localhost:3000/</code>.</p>
+
+<pre><code>WebDavServer server =
+    new WebDavServer(new WebDavDiskStore("your_local_path"));
+server.Listener.Prefixes.Add("http://your_url_here/");
+server.Start();
+</code></pre>
+
+<h3 id="step-6">Step 6</h3>
+
+<p>Run your application and you’re finished.</p>
+
+<h2 id="sample-project">Sample project</h2>
+
+<p>Link to sample project : COMMING SOON</p>
+
+<h2 id="optional-authentication-configuration">OPTIONAL: Authentication configuration</h2>
+
+<p>The standard authentication configuration of the WebDAVSharp server is the <a href="http://msdn.microsoft.com/en-us/library/system.net.authenticationschemes(v=vs.110).aspx">Negotiate authentication scheme</a>.</p>
+
+<p>But if you want to make use of another authentication scheme, you can add it to the WebDavServer instance.</p>
+
+<pre><code>HttpListener listener = new HttpListener();
+listener.AuthenticationSchemes = AuthenticationSchemes.Basic;
+WebDavServer server =
+    new WebDavServer(new WebDavDiskStore("your_local_path"), listener);
+</code></pre>
+
 
                 <div class="section-nav">
     <div class="left align-right">

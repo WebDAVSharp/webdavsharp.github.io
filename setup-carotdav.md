@@ -6,7 +6,7 @@ prev_section: /setup/setup-server
 next_section: /setup/setup-windowsexplorer
 ---
 
-On this page you can find the explanation how to configure a CarotDAV client to work with the WebDAV server.
+On this page you can find the explanation of how to configure a CarotDAV client to work with the WebDAV server.
 
 ## Guide ##
 
