@@ -1113,7 +1113,7 @@ code.option, code.flag, code.filter, code.output {
 .intro2 p{
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 250%;
     margin-top: 25%;
     margin-left: 35%;
     text-align: center;
