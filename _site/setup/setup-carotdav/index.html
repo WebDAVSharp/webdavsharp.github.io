@@ -140,7 +140,41 @@ After the installation is done, run the program.</p>
 
 <h3 id="step-2">Step 2</h3>
 
-<p>COMING SOON</p>
+<p>Once the program has been started, click on the “New Connection” icon.
+A dropdown will be shown and you need to select the WebDAV option.</p>
+
+<p><img src="/img/setup-carotdav/carotdav1.png" alt="CarotDAV overview 1" /></p>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>A new window opens where you can fill in the configuration information.</p>
+
+<p>The “Setting Name” is the name you want to give your WebDAV server entry in the CarotDAV overview.</p>
+
+<p>In the “URI” textfield, fill in your URL to the server.
+For example, <code>http://localhost/</code> will map localhost at port 80.
+You can also specify the port in your URL, for example, <code>http://localhost:3000/</code> will map localhost at port 3000.
+And you can even give up a subdirectory  of your server.
+For example, the <code>http://localhost:3000/subdir</code> will map the directory “subdir” in your server at port 3000.</p>
+
+<p><img src="/img/setup-carotdav/carotdav2.png" alt="CarotDAV connection setting general" /></p>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Click on the “Auth” tab and check that the needed authentication methods are checked.
+For WebDAVSharp, it’s important to check the Negotiate checkbox,
+because WebDAVSharp makes, by default, use of the Negotiate authentication method.</p>
+
+<p><img src="/img/setup-carotdav/carotdav3.png" alt="CarotDAV connection setting auth" /></p>
+
+<p>Click on the “OK” button to complete the process.</p>
+
+<h3 id="step-5">Step 5</h3>
+
+<p>If everything went well, you’ll see a new WebDAV entry with your chosen name in the CarotDAV overview.
+Click on the entry to access it.</p>
+
+<p><img src="/img/setup-carotdav/carotdav5.png" alt="CarotDAV overview 2" /></p>
 
 
                 <div class="section-nav">
