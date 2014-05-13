@@ -74,7 +74,7 @@ Run your application and you're finished.
 
 ## Sample project ##
 
-Link to sample project : COMMING SOON
+Link to sample project : COMING SOON
 
 ## OPTIONAL: Authentication configuration ##
 

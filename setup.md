@@ -5,6 +5,23 @@ permalink: /setup/
 next_section: /setup/setup-server
 ---
 
-This section wil show you how to setup the server and client.
+This section will show you how to setup the server and client for WebDAVSharp.
+Check out the guides below.
 
-COMING SOON
+## Server ##
+
+If you're looking for a way to setup the server? Take a look at our [WebDAVSharp server guide][1].
+
+## Client ##
+
+### CarotDAV ###
+
+Looking for a way to configure CarotDAV as your WebDAV client for WebDAVSharp? Take a look at our [CarotDAV guide][2].
+
+### Windows Explorer ###
+
+Looking for a way to configure your Windows Explorer as your WebDAV client for WebDAVSharp? Take a look at our [Windows Explorer guide][3].
+
+  [1]: /setup/setup-server
+  [2]: /setup/setup-carotdav
+  [3]: /setup/setup-windowsexplorer
