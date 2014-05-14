@@ -1157,11 +1157,24 @@ code.option, code.flag, code.filter, code.output {
     }
 }
 
+@media (min-width: 669px) {
+    .wrapper-home-boxes {
+        height: 330px;
+    }
+}
+
 .home-box {
+    position: relative;
     width: 100%;
     min-width: 33%;
     padding: 10px 5px 10px 5px;
     float: left;
+    height: 100%;
+}
+
+.home-box article {
+    position: relative;
+    height: 100%;
 }
 
 .home-box h1 {
@@ -1181,6 +1194,18 @@ code.option, code.flag, code.filter, code.output {
     .home-box {
         width: 33%;
         min-height: 100%;
+    }
+}
+
+.home-box .button-green {
+    margin-bottom: 0px;
+}
+
+@media (min-width: 669px) {
+    .home-box .button-green {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
     }
 }
 
