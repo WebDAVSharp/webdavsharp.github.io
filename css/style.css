@@ -1133,13 +1133,25 @@ code.option, code.flag, code.filter, code.output {
     margin-bottom: 7px;
 }
 
+@media (max-width: 568px) {
+    .big-banner ul {
+        margin-top: 0;
+    }
+}
+
 
 .big-banner li {
     list-style-type: none;
     float: right;
 }
 
-@media (min-width: 512px) {
+@media (max-width: 568px) {
+    .big-banner p {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 569px) {
     .big-banner p {
         font-size: 42px;
     }
