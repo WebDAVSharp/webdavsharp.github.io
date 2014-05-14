@@ -66,7 +66,7 @@ body > header, body > section, body > footer {
 
 #header_wrap {
     background: none;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    /*box-shadow: 0 1px 5px rgba(0, 0, 0, .1);*/
 }
 
 #header_wrap .inner {
@@ -529,7 +529,7 @@ aside li.current a:before {
 /* Documentation */
 
 .docs article {
-    min-height: 400px;
+    min-height: 200px;
 }
 
 .docs .content {
@@ -1098,23 +1098,128 @@ code.option, code.flag, code.filter, code.output {
 
 
 /* Home page */
-.intro2{
+.big-banner{
     background: url(../img/home-background.png) repeat top center;
     width: 100%;
 }
 
-.intro2 div.drawing {
+.big-banner div.drawing {
     background-image: url("../img/home-intro.png") ;
     display: block;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.intro2 p{
+.big-banner div.text{
+    margin-top: 20%;
+    margin-left: 35%;
+}
+
+.big-banner p{
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 250%;
-    margin-top: 25%;
-    margin-left: 35%;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.big-banner ul {
+    list-style-type: none;
+    float: right;
+    border-radius: 5px;
+    padding: 0;
+
+    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 7px;
+}
+
+
+.big-banner li {
+    list-style-type: none;
+    float: right;
+}
+
+@media (min-width: 512px) {
+    .big-banner p {
+        font-size: 42px;
+    }
+}
+
+.home-box {
+    width: 100%;
+    min-width: 33%;
+    padding: 10px 5px 10px 5px;
+    float: left;
+}
+
+.home-box h1 {
     text-align: center;
+}
+
+.home-box h2 {
+    text-align: center;
+}
+
+.home-box h3 {
+    margin-top: 0em;
+    text-align: center;
+}
+
+@media (min-width: 669px) {
+    .home-box {
+        width: 33%;
+        min-height: 100%;
+    }
+}
+
+/* Button */
+
+.button-white {
+
+}
+
+.button-white a {
+    background-color: #FFFFFF;
+    height: 100%;
+    display: block;
+
+    margin: 5px;
+
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 0.5em 1em;
+    text-shadow: none;
+    text-transform: uppercase;
+    transition: all .25s;
+    -moz-transition: all .25s;
+    -webkit-transition: all .25s;
+}
+
+.button-white a:hover {
+    background: #FFFFFF;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+/* Clearfix */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
 }
