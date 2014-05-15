@@ -34,8 +34,8 @@ but more Common.Logging configurations can be found [here][2].
     NameValueCollection properties = new NameValueCollection();
     properties["showDateTime"] = "true";
     // set Adapter
-    LogManager.Adapter =
-        new Simple.ConsoleOutLoggerFactoryAdapter(properties);
+    LogManager.Adapter = new 
+        Common.Logging.Simple.ConsoleOutLoggerFactoryAdapter(properties);
 
 ### Step 4 ###
 
@@ -50,6 +50,9 @@ Otherwise, it might not work.
                 uiAccess="true" />
         </requestedPrivileges>
     </security>
+
+If Visual Studio doesn't ask for Administrator rights when starting the program, 
+just manually run Visual Studio as Administrator and open your project. 
 
 ### Step 5 ###
 
@@ -74,11 +77,11 @@ Run your application and you're finished.
 
 ## Sample project ##
 
-Link to sample project : COMING SOON
+You can find an example project [here][3]
 
 ## OPTIONAL: Authentication configuration ##
 
-The standard authentication configuration of the WebDAVSharp server is the [Negotiate authentication scheme][3].
+The standard authentication configuration of the WebDAVSharp server is the [Negotiate authentication scheme][4].
 
 But if you want to make use of another authentication scheme, you can add it to the WebDavServer instance.
 
@@ -90,4 +93,5 @@ But if you want to make use of another authentication scheme, you can add it to 
 
   [1]: http://netcommon.sourceforge.net/
   [2]: http://netcommon.sourceforge.net/docs/2.1.0/reference/html/ch01.html#logging-configuring-in-code
-  [3]: http://msdn.microsoft.com/en-us/library/system.net.authenticationschemes(v=vs.110).aspx
+  [3]: https://github.com/WebDAVSharp/Example
+  [4]: http://msdn.microsoft.com/en-us/library/system.net.authenticationschemes(v=vs.110).aspx
