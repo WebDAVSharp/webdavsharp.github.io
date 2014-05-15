@@ -79,16 +79,9 @@ Run your application and you're finished.
 
 You can find an example project [here][3]
 
-## OPTIONAL: Authentication configuration ##
+## Authentication configuration ##
 
 The standard authentication configuration of the WebDAVSharp server is the [Negotiate authentication scheme][4].
-
-But if you want to make use of another authentication scheme, you can add it to the WebDavServer instance.
-
-    HttpListener listener = new HttpListener();
-    listener.AuthenticationSchemes = AuthenticationSchemes.Basic;
-    WebDavServer server =
-        new WebDavServer(new WebDavDiskStore("your_local_path"), listener);
 
 
   [1]: http://netcommon.sourceforge.net/
