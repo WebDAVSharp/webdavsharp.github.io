@@ -1293,3 +1293,10 @@ html[xmlns] .clearfix {
 * html .clearfix {
     height: 1%;
 }
+
+/* Class diagram */
+
+div#map {
+    width: 100%;
+    height: 512px;
+}

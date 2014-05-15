@@ -5,10 +5,10 @@
     <li class="{% if page.url contains '/setup/' ' %}current{% endif %}">
         <a href="{{ site.url }}/setup/">Setup</a>
     </li>
-    <li class="{% if page.url contains '/classdiagram/' ' %}current{% endif %}">
-        <a href="{{ site.url }}/classdiagram/" target="_blank">Diagram</a>
+    <li class="{% if page.url contains '/classdiagram/' ' %}current{% endif %} hide-on-mobiles">
+        <a href="{{ site.url }}/classdiagram/">Diagram</a>
     </li>
     <li class="{% if page.url contains '/docs/' ' %}current{% endif %}">
-        <a href="{{ site.url }}/docs/" target="_blank".>Docs</a>
+        <a href="{{ site.url }}/docs/" target="_blank">Docs</a>
     </li>
 </ul>
