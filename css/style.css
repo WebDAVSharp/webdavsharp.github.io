@@ -1303,3 +1303,19 @@ div#map {
     z-index: 5;
     overflow: hidden;
 }
+
+/* footer */
+
+section#footer-space{
+    margin-bottom: 100px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+}
+
+footer p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
