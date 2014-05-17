@@ -16,7 +16,7 @@ Create a new application in Visual Studio, a console application for example.
 
 ### Step 2 ###
 
-Add references to the .dll file of the WebDAVSharp server.
+Add references to the .dll file of the WebDAV# server.
 
 ### Step 3 ###
 
@@ -81,7 +81,7 @@ You can find an example project [here][3]
 
 ## Authentication configuration ##
 
-The standard authentication configuration of the WebDAVSharp server is the [Negotiate authentication scheme][4].
+The standard authentication configuration of the WebDAV# server is the [Negotiate authentication scheme][4].
 
 
   [1]: http://netcommon.sourceforge.net/

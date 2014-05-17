@@ -11,7 +11,10 @@
     <li class="{% if page.url contains '/classdiagram/' ' %}current{% endif %} hide-on-mobiles">
         <a href="{{ site.url }}/classdiagram/">Diagram</a>
     </li>
-    <li class="{% if page.url contains '/docs/' ' %}current{% endif %}">
+    <li class="{% if page.url contains '/docs/' ' %}current{% endif %} hide-on-mobiles">
         <a href="{{ site.url }}/docs/" target="_blank">Docs</a>
+    </li>
+    <li class="{% if page.url contains '/downloads/' ' %}current{% endif %} hide-on-mobiles">
+        <a href="{{ site.url }}/downloads/">Downloads</a>
     </li>
 </ul>

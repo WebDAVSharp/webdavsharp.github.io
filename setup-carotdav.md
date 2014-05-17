@@ -40,8 +40,8 @@ For example, the `http://localhost:3000/subdir` will map the directory "subdir" 
 ### Step 4 ###
 
 Click on the "Auth" tab and check that the needed authentication methods are checked.
-For WebDAVSharp, it's important to check the Negotiate checkbox,
-because WebDAVSharp makes, by default, use of the Negotiate authentication method.
+For WebDAV#, it's important to check the Negotiate checkbox,
+because WebDAV# makes, by default, use of the Negotiate authentication method.
 
 ![CarotDAV connection setting auth](/img/setup-carotdav/carotdav3.png)
 
