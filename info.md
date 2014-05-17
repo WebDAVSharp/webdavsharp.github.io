@@ -19,7 +19,7 @@ More info about how the server has been implemented can be found with links on t
 
   [1]: http://www.vkarlsen.no/
   [2]: https://webdavsharp.codeplex.com/
-  [3]: be.linkedin.com/in/lievenjanssen/
-  [4]: be.linkedin.com/in/ewoutmerckx/
+  [3]: https://www.linkedin.com/in/lievenjanssen/
+  [4]: https://www.linkedin.com/in/ewoutmerckx
   [5]: http://xploreplus.com/
 
