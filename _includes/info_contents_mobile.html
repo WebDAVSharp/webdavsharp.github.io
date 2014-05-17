@@ -1,0 +1,8 @@
+<div class="docs-nav-mobile unit whole show-on-mobiles">
+    <select onchange="if (this.value) window.location.href=this.value">
+        <option value="">Choose…</option>
+        <optgroup label="Info">
+            {% include info_option.html items='info-authentication' %}
+        </optgroup>
+    </select>
+</div>
