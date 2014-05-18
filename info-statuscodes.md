@@ -2,6 +2,8 @@
 layout: info
 title: Info Status codes
 permalink: /info/info-statuscodes/
+prev_section: /info/info-exceptions
+next_section: /info/info-response
 ---
 
 For the status codes of Http, the WebDAV# server makes use of the [HttpStatusCode][1] enumeration, which is included in the .NET Framework 4.5, in the [System.Net][2] namespace.

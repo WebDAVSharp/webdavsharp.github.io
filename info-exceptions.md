@@ -2,6 +2,8 @@
 layout: info
 title: Info Exceptions
 permalink: /info/info-exceptions/
+prev_section: /info/info-authentication
+next_section: /info/info-statuscodes
 ---
 
 The WebDAV server has some exceptions included which are mapped to HTTP or WebDAV status codes.

@@ -2,6 +2,8 @@
 layout: info
 title: Info Http Listener
 permalink: /info/info-httplistener/
+prev_section: /info
+next_section: /info/info-methodhandlers
 ---
 
 The [HttpListener][1] instance, of the [System.Net][2] namespace, in the WebDAV server listens to a specific port of a specific URL.

@@ -2,6 +2,7 @@
 layout: info
 title: Info Response
 permalink: /info/info-response/
+prev_section: /info/info-statuscodes
 ---
 
 Each WebDAV method sends, after processing the request, a response as an instance of the [WebResponse][1] class of the [System.Net][2] namespace.
