@@ -16,7 +16,9 @@ Create a new application in Visual Studio, a console application for example.
 
 ### Step 2 ###
 
-Add references to the .dll file of the WebDAV# server.
+Add the [NuGet package][5] of the WebDAV server in your application.
+
+Or download the [WebDAV server code][6] manually and add a reference to the .dll file of the WebDAV# server, in your application.
 
 ### Step 3 ###
 
@@ -88,3 +90,5 @@ The standard authentication configuration of the WebDAV# server is the [Negotiat
   [2]: http://netcommon.sourceforge.net/docs/2.1.0/reference/html/ch01.html#logging-configuring-in-code
   [3]: https://github.com/WebDAVSharp/Example
   [4]: http://msdn.microsoft.com/en-us/library/system.net.authenticationschemes(v=vs.110).aspx
+  [5]: https://www.nuget.org/packages/WebDAVSharp.Server/
+  [6]: https://github.com/WebDAVSharp/WebDAVSharp.Server

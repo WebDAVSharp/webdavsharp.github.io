@@ -9,7 +9,9 @@ Here you can find all the downloads of the WebDAV# organisation.
 ## WebDAV# server ##
 
 A WebDAV server, coded in C#, which can be used for various WebDAV .NET applications.
-The server can be found **[here][1]**.
+The NuGet package of the server can be found **[here][5]**.
+
+The server code can be found **[here][1]**.
 
 ## WebDAV# example project ##
 
@@ -31,3 +33,4 @@ The tests can be found **[here][4]**.
   [2]: https://github.com/WebDAVSharp/Example
   [3]: https://github.com/WebDAVSharp/Client
   [4]: https://github.com/WebDAVSharp/Tests
+  [5]: https://www.nuget.org/packages/WebDAVSharp.Server/
