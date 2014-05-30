@@ -1,6 +1,6 @@
 ---
 layout: info
-title: Info Method Handlers
+title: Method Handlers
 permalink: /info/info-methodhandlers/
 prev_section: /info/info-httplistener
 next_section: /info/info-authentication

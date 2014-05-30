@@ -1,6 +1,6 @@
 ---
 layout: info
-title: Info Http Listener
+title: Http Listener
 permalink: /info/info-httplistener/
 prev_section: /info
 next_section: /info/info-methodhandlers

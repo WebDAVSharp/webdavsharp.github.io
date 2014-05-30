@@ -1,6 +1,6 @@
 ---
 layout: info
-title: Info Authentication
+title: Authentication
 permalink: /info/info-authentication/
 prev_section: /info/info-methodhandlers
 next_section: /info/info-exceptions

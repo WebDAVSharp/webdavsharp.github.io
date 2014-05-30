@@ -1,6 +1,6 @@
 ---
 layout: info
-title: Info Response
+title: Response
 permalink: /info/info-response/
 prev_section: /info/info-statuscodes
 ---

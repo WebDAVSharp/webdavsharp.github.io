@@ -1,6 +1,6 @@
 ---
 layout: info
-title: Info Status codes
+title: Status codes
 permalink: /info/info-statuscodes/
 prev_section: /info/info-exceptions
 next_section: /info/info-response

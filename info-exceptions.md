@@ -1,6 +1,6 @@
 ---
 layout: info
-title: Info Exceptions
+title: Exceptions
 permalink: /info/info-exceptions/
 prev_section: /info/info-authentication
 next_section: /info/info-statuscodes
